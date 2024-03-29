@@ -1,5 +1,4 @@
 from netmiko import ConnectHandler
-import jinja2
 from paramiko import *
 from netmiko.exceptions import NetMikoTimeoutException
 from paramiko.ssh_exception import SSHException
@@ -8,17 +7,22 @@ from netmiko.exceptions import AuthenticationException
 from HostFile import *
 
 ''' Simple Python script to make standard set command updates on any JunOS device.  The comma separated list given in
-set_commands would be the equivalent to a list that would be copy/pasted with the load set terminal command.
+set_commands would be the equivalent to a list that would be copy/pasted with the load set terminal command for "n" number
+of set commands. 
 
 HostFile represents the hostfile with a list of <hostname>:<IP_addresses> in key:value pair.
 
 An additional check by checking the location of the configuration hierarchy and matching on a keyword specified to see if the configuration
 has been updated.  If so, pass to the next device in the list.
 
-Used default SSH port of 22.  Update port number if nonstandard port is being used instead'''
+Used default SSH port of 22.  Update port number if nonstandard port is being used instead.'''
 
-set_commands = ['<set command #1>',
-                       '<set command #2>']
+set_commands = ['<set command 1>',
+                       '<set command 2>',
+               .
+               .
+               .
+              '<set command n>']
 
 
 for k in HostFile:
