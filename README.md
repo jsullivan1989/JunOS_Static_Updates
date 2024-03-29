@@ -15,6 +15,7 @@ Netmiko and Paramiko are both required to run the scripts and are good practices
 They can be installed with the 'pip3 install' commands listed below.
 
 #pip3 install netmiko
+
 #pip3 install paramiko
 
 
