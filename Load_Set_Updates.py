@@ -25,6 +25,8 @@ set_commands = ['<set command 1>',
               '<set command n>']
 
 
+passwd = getpass.getpass('Please enter the JunOS password for your account: ')
+
 for k in HostFile:
     try:
         Hostname = k
@@ -33,7 +35,7 @@ for k in HostFile:
             'device_type': 'juniper',
             'host': IP_Address,
             'username': '<username>',
-            'password': '<password>',
+            'password': passwd,
             'port': 22,
             }
         net_connect = ConnectHandler(**Host)
