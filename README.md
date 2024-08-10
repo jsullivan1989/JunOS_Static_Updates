@@ -1,4 +1,4 @@
-# JunOS_Static_Updates
+# JunOS Static Updates
 Repository for Python scripting involving static updates to list of host devices specified in HostFile.py.  All code was built using Python3.
 
 The HostFile.py represents a dictionary of hostnames and IP addresses in key:value format.  
