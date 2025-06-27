@@ -3,6 +3,7 @@ from paramiko import *
 from netmiko.exceptions import NetMikoTimeoutException
 from paramiko.ssh_exception import SSHException
 from netmiko.exceptions import AuthenticationException
+import getpass
 
 from HostFile import *
 
