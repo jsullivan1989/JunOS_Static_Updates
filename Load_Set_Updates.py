@@ -37,7 +37,7 @@ for k in HostFile:
             'host': IP_Address,
             'username': '<username>',
             'password': passwd,
-            'port': 22,
+            'port': 22
             }
         net_connect = ConnectHandler(**Host)
         command_output = net_connect.send_command('show configuration <hierarchy> | match <keyword> | display set')
